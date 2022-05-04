@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Menu(props){
+export default function Menu(props) {
     return (
         <nav className="menu">
             <a className="menu__item" href="/">Главная</a>

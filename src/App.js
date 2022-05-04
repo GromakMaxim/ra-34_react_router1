@@ -14,7 +14,8 @@ function App() {
             <Menu/>
             <div className="page">
                 <Routes>
-                    <Route path="/" exact element={<HomePage/>}/> // In V6, you can't use the 'component' prop anymore. It was replaced in favor of element :(
+                    <Route path="/" exact element={<HomePage/>}/> // In V6, you can't use the 'component' prop anymore.
+                    It was replaced in favor of element :(
                     <Route path="/drift" element={<DriftPage/>}/>
                     <Route path="/timeattack" element={<TimeAttackPage/>}/>
                     <Route path="/forza" element={<ForzaPage/>}/>
