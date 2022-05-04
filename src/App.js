@@ -14,11 +14,11 @@ function App() {
             <Menu/>
             <div className="page">
                 <Routes>
-                    <Route path="/" exact element={<HomePage/>}/> // In V6, you can't use the 'component' prop anymore.
+                    <Route path="/ra-34_react_router1/" exact element={<HomePage/>}/> // In V6, you can't use the 'component' prop anymore.
                     It was replaced in favor of element :(
-                    <Route path="/drift" element={<DriftPage/>}/>
-                    <Route path="/timeattack" element={<TimeAttackPage/>}/>
-                    <Route path="/forza" element={<ForzaPage/>}/>
+                    <Route path="/ra-34_react_router1/drift" element={<DriftPage/>}/>
+                    <Route path="/ra-34_react_router1/timeattack" element={<TimeAttackPage/>}/>
+                    <Route path="/ra-34_react_router1/forza" element={<ForzaPage/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
