@@ -5,23 +5,23 @@ import DriftPage from "./components/pages/DriftPage";
 import TimeAttackPage from "./components/pages/TimeAttackPage";
 import ForzaPage from "./components/pages/ForzaPage";
 import Menu from "./components/Menu";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import '../src/css/main.css';
 
-function App() {
+function App() { // In V6, you can't use the 'component' prop anymore.It was replaced in favor of element :(
+    console.log(process.env.PUBLIC_URL)
     return (
-        <BrowserRouter>
+        <Router>
             <Menu/>
             <div className="page">
                 <Routes>
-                    <Route path="/ra-34_react_router1/" exact element={<HomePage/>}/> // In V6, you can't use the 'component' prop anymore.
-                    It was replaced in favor of element :(
-                    <Route path="/ra-34_react_router1/drift" element={<DriftPage/>}/>
-                    <Route path="/ra-34_react_router1/timeattack" element={<TimeAttackPage/>}/>
-                    <Route path="/ra-34_react_router1/forza" element={<ForzaPage/>}/>
+                    <Route path="" exact element={<HomePage/>}/>
+                    <Route path="drift" element={<DriftPage/>}/>
+                    <Route path="timeattack" element={<TimeAttackPage/>}/>
+                    <Route path="forza" element={<ForzaPage/>}/>
                 </Routes>
             </div>
-        </BrowserRouter>
+        </Router>
     );
 }
 
